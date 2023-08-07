@@ -71,12 +71,12 @@ def random_ua():
     return(ua)
 myid=uuid.uuid4().hex[:5].upper()
 try:
-    key1 = open('/data/data/com.termux/files/usr/bin/.mrHAMIIxxx-cov', 'r').read()
+    key1 = open('/data/data/com.termux/files/usr/bin/.mrMALIkxxx-cov', 'r').read()
 except:
-    kok=open('/data/data/com.termux/files/usr/bin/.mrHAMIIxxx-cov', 'w');kok.write(myid);kok.close()
+    kok=open('/data/data/com.termux/files/usr/bin/.mrMALIkxxx-cov', 'w');kok.write(myid);kok.close()
 uid = os.getuid()
-key1 = open('/data/data/com.termux/files/usr/bin/.mrHAMIIxxx-cov', 'r').read()
-kex=(f"HAMII-XD~CREATE:{uid}TS{key1}110E==")
+key1 = open('/data/data/com.termux/files/usr/bin/.mrMALIkxxx-cov', 'r').read()
+kex=(f"MALIk-XD~CREATE:{uid}TS{key1}110E==")
 key2 = base64.b64encode(str(f"{kex}").encode('utf-8'))
 key=(f"{key2}")
 fkeyx = key.replace("b'","").replace("'","")
@@ -85,19 +85,19 @@ def linex():
 def clear():
     import os
     os.system("clear")
-    print("""\033[1;37m 888    888        d8888 888b     d888 8888888 8888888 
- 888    888       d88888 8888b   d8888   888     888   
- 888    888      d88P888 88888b.d88888   888     888   
- 8888888888     d88P 888 888Y88888P888   888     888   
- 888    888    d88P  888 888 Y888P 888   888     888   
- 888    888   d88P   888 888  Y8P  888   888     888   
- 888    888  d8888888888 888   "   888   888     888   
- 888    888 d88P     888 888       888 8888888 8888888
+    print("""\033[1;37m '##::::'##::::'###::::'##:::::::'####:'##:::'##:
+ ###::'###:::'## ##::: ##:::::::. ##:: ##::'##::
+ ####'####::'##:. ##:: ##:::::::: ##:: ##:'##:::
+ ## ### ##:'##:::. ##: ##:::::::: ##:: #####::::
+ ##. #: ##: #########: ##:::::::: ##:: ##. ##:::
+ ##:.:: ##: ##.... ##: ##:::::::: ##:: ##:. ##::
+ ##:::: ##: ##:::: ##: ########:'####: ##::. ##:
+..:::::..::..:::::..::........::....::..::::..::
 ------------------------------------------
-   [•] 𝗔𝘂𝘁𝗵𝗼𝗿    :   𝙷𝙰𝙼𝙸𝙸 𝚁𝙰𝙹𝙿𝙾𝙾𝚃 
-  [•] 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽  :   +92302******1
-  [•] 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸  :   𝙼𝚁.𝙷𝙰𝙼𝙸𝙸
-  [•] 𝗩𝘀𝗿𝘀𝗶𝗼𝗻   :   0.4
+   [•] 𝗔𝘂𝘁𝗵𝗼𝗿    :   MALIK YOUSAF 
+  [•] 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽  :   03421396250
+  [•] 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸  :   MALIK YOUSAF
+  [•] 𝗩𝘀𝗿𝘀𝗶𝗼𝗻   :   1.5
   [•] 𝗧𝗼𝗼𝗹 𝗧𝘆𝗽𝗲 :   𝙰𝚞𝚝𝚘 𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔 𝚁𝚎𝚐𝚒𝚜𝚝𝚎𝚛
 \033[1;37m------------------------------------------""") 
 try:
@@ -119,8 +119,8 @@ try:
         
     else:
         print(' Update done successfully wait for setup! ')
-        time.sleep(2)
-        os.system('rm -rf AutoCreate && python create.py')
+        time.sleep(1)
+        os.system('rm -rf malikyousaf && python malikyousaf.py')
         exit()
 except Exception as e:exit('\n Network connection error '+e)
 def cvt(st,ran):
@@ -270,7 +270,7 @@ def Create():
             'sex': '1',
             'reg_passwd__':pas,
             'birthday_day': rnd(10,27),
-            'birthday_month': '3',
+            'birthday_month': '1,12',
             'birthday_year': rnd(1978,1999),
             'welcome_step_completed': True,
             'submission_request': True,
@@ -379,7 +379,7 @@ def Create():
            global ok,loop,cp,ok1
            import sys
            loop+=1
-           sys.stdout.write('\r\r\033[1;37m [HAMII-CREATE] \033[1;32mOK:%s \033[1;37m'%(ok));sys.stdout.flush()
+           sys.stdout.write('\r\r\033[1;37m [MALIk-CREATE] \033[1;32mOK:%s \033[1;37m'%(ok));sys.stdout.flush()
            requests=r.Session()
            from fake_email import Email
            mmail=Email().Mail()
@@ -397,18 +397,18 @@ def Create():
                  cok=";".join([k+"="+v for k,v in dc.items()])
                  uid=re.findall("c_user=(.*?);",cok)[0]
                  coki = cvt('ok',requests.cookies.get_dict())+"dpr=2;locale=en_US;wd=950x1835;m_page_voice="+uid
-                 print("\r\r\033[1;32m [HAMII-OK] "+uid+'|'+pas+'|'+coki)
+                 print("\r\r\033[1;32m [MALIk-OK] "+uid+'|'+pas+'|'+coki)
                  ok+=1
                  open(file,"a").write(uid+"|"+pas+"|"+coki+"\n")
                  linex()
        except Exception as e:
            if not "urllib" and not "perma" in str(e):print(e)
            pass
-    file="/sdcard/HAMII/CREATE-OK.txt"
+    file="/sdcard/MALIk/CREATE-OK.txt"
     u=5000
     clear()
     print(' Use Airplane Or Use IP Changer if ids coming cp ')
-    print(' ids will be save in /sdcard/HAMII/CREATE-OK.txt')
+    print(' ids will be save in /sdcard/MALIk/CREATE-OK.txt')
     linex()
     for i in range(50000):
        import time
